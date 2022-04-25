@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: #2a4634;
+  color: white;
+
+}
+
+@font-face {
+  font-family: "TT-Barrels-Regular";
+  src: url(assets/fonts/TT-Barrels-Regular.otf);
+}
+
+@font-face {
+  font-family: "TT-Barrels-Light";
+  src: url(assets/fonts/TT-Barrels-Light.otf);
+}
+
+@font-face {
+  font-family: "TT-Barrels-Bold";
+  src: url(assets/fonts/TT-Barrels-Bold.otf);
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(assets/fonts/Montserrat-Light.otf);
+}
+
+article {
+  font-family: "Montserrat-Light";
+}
+
+  article p {
+    margin: 0 auto;
+    font-size: 16px;
+    width: 67%;
+    line-height: 1.8em;
+  }
+
+  article p:last-of-type {
+    margin-bottom: 5%;
+  }
+
+h1 {
+  font-family: "TT-Barrels-Regular";
+  color: white;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 1em;
+}
+
+body{
+  margin: 0px auto;
+}
+
+#header-servicios-wrapper {
+  background: url(assets/desktop_cover.png) no-repeat;
+  background-size: contain;
+}
+
+header {
+  margin: auto;
+}
+
+h2 {
+  color: #af6a3a;
+  font-size: 60px;
+  padding-bottom: 10%;
+  font-family: "TT-Barrels-Regular";
+  letter-spacing: 2px;
+  text-align: center;
+
+}
+
+section {
+  clear: both;
+}
+
+.servicios{
+  background: url(assets/nuestros-servicios.png) 50% 0 no-repeat;
+  font-size: 20px;
+  height: 762px;
+  width: 1145px;
+  min-width: 816px;
+  margin: 0% auto;
+}
+
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  width: 852px;
+  height: 810px;
+  background: url(assets/rombo+linea.png) 50% 100% no-repeat;
+}
+
+.caja {
+  width: 45%;
+  margin: 19.7% auto 0 auto;
+  text-align: center;
+}
+
+#contacto-footer-wrapper {
+  background: url(assets/contact_form_background_image_desktop.svg);
+  background-size: cover;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.contacto {
+  width: 1145px;
+  min-width: 820px;
+  margin: 0 auto;
+  height: 345px;
+}
+
+.contact-text {
+  float: left;
+  width: 42%;
+  min-width: 341px;
+}
+
+.contact-form {
+  float: right;
+  width: 49%;
+  min-width: 360px;
+}
+
+.input {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #af6a3a;
+  border-width: 0.5px;
+  font-family: "Montserrat-Light";
+  color: white;
+  font-size: 14px;
+  width: 172px;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+.submit {
+  background-color: transparent;
+  border-color: #af6a3a;
+  border-width: 0.5px;
+  margin-left: 264px;
+  position: absolute;
+  margin-top: -128px;
+  color: white;
+  padding: 1.5% 10%;
+  bottom: 3%;
+  right: 0;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+}
+
+.primary-link {
+  background-color: transparent;
+  border: 1px solid #af6a3a;
+  color: white;
+  padding: 2.5% 10px;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+  margin-top: 25px;
+  width: 70%;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.primary-link:hover {
+  background: #af6a3a;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  font-size: 14px;
+}
+
+.footer {
+  width: 1145px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  text-align: left;
+  height: 70px;
+}
+
+.info-footer {
+  float: left;
+  border: 1px solid #af6a3a;
+  padding: 1.4% 5.39%;
+  font-family: "TT-Barrels-Bold";
+}
+
+#tel-email {
+  width: 289px;
+  font-family: "TT-Barrels-Regular";
+}
+
+#align-left {
+  text-align: left;
+  font-size: 36px;
+  font-family: "TT-Barrels-Light";
+  position: relative;
+  z-index: 10;
+}
+
+#first {
+  float: left;
+}
+
+#second {
+  float: right;
+}
+
+#header-icon{
+  width: 136px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#contact-logo{
+  position: absolute;
+  margin-left: -2.7%;
+  margin-top: -3%
+}
+
+form {
+  position: relative;
+}
+
+.input {
+  width: 47%;
+}
+
+#form-1 {
+  padding-bottom: 10px;
+  float: left;
+}
+
+#message, #form-3 {
+  float: left;
+}
+
+#form-2 {
+  padding-bottom: 10px;
+  float: right;
+  margin-top: -172px;
+}
+#form-large {
+  padding-bottom: 10px;
+}
+
+#img-footer {
+  float: left;
+}
+
+.whatsapp-logo {
+  display: none;
+}
+
+.line {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  p{
+    line-height: 1.6;
+  }
+    .line {
+      width: 80%;
+      display: block;
+      height: 0.5px;
+      background: #af6a3a;
+      text-align: center;
+      margin: 100px auto 0 auto;
+    }
+
+    .header {
+      background:none;
+      width: 100%;
+      height: 100%;
+    }
+
+    #header-icon {
+      width: 90px;
+      margin-top: 13%;
+      margin-bottom: 30%;
+  }
+
+    #header-servicios-wrapper {
+      background: url(assets/mobile_cover.png) no-repeat;
+      background-size: contain;
+  }
+
+    h1 {
+      font-size: 36px;
+      letter-spacing: 1px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 36px
+    }
+
+    .servicios{
+      background: url(assets/nuestros-servicios-mobile.png) 50% 0 no-repeat;
+      font-size: 12px;
+      height: 100%auto;
+      width: 450px;
+      margin: 0% auto;
+      margin-bottom: 30%;
+    }
+
+    .servicios, .contacto {
+      min-width: unset;
+      width: 100%;
+      height: 100%;
+    }
+
+
+  #first {
+    margin-top: 50%;
+    margin-bottom: 22%;
+  }
+
+  #second {
+    float: none;
+  }
+
+  .caja {
+    width: 100%;
+  }
+
+  .separador {
+    color: #af6a3a;
+  }
+
+    article {
+        font-family: "Montserrat-Light";
+        font-size: 15px;
+      }
+
+    .contact-form{
+      float: none;
+      width: unset;
+      min-width: unset;
+      clear: both;
+
+  }
+
+  .contacto {
+    margin-bottom: 42%;
+  }
+
+  .footer {
+    width: 250px;
+    margin: unset;
+  }
+
+  .input, .submit {
+    width: 100%;
+  }
+
+  #contact-logo {
+    position: absolute;
+    margin-left: -8%;
+    margin-top: -17%;
+  }
+
+  #form-1 {
+    float:none;
+  }
+
+  #form-2 {
+    float:none;
+  }
+
+  #message, #form-3 {
+    padding-bottom: 10px;
+    float: none;
+  }
+
+  .submit {
+    margin: 0%auto;
+    height: 7%;
+    position: initial;
+  }
+
+  .whatsapp-logo {
+    width: 60px;
+    height: 60px;
+    float: right;
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+  }
+
+  #contacto-footer-wrapper {
+    width: 81%;
+    margin: 0 auto;
+  }
+
+  .contact-text {
+    width: unset;
+    min-width: unset;
+    margin-bottom: 10%;
+    position: relative;
+  }
+
+  .caja p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .info-footer {
+    float: left;
+    border: unset;
+    padding: 0% 10% 10% 0%;
+  }
+
+  #img-footer {
+    float: left;
+    margin-bottom: 10%;
+  }
+
+  #form {
+    width: 100%;
+  }
+
+  #mobile-message {
+    margin-bottom: 10%;
+  }
+
+  @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+  	#align-left {
+  		text-align: justify;
+  		-webkit-hyphens: auto; /* A día de hoy aún es necesario el prefijo para soportar a Safari */
+  		hyphens: auto;
+      font-size: 20px;
+      text-align: justify;
+  	}
+  }
+}
+
+::-webkit-input-placeholder, :-ms-input-placeholder, ::placeholder  {
+  color: #658a72;
+}

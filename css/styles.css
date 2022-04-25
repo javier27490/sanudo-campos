@@ -1,0 +1,113 @@
+/* Base */
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face {
+  font-family: TT_barrels;
+  src: url(../fonts/TT Barrels Regular.otf);
+}
+.averta {
+  font-family: Averta;
+}
+
+.averta-bold {
+  font-family: AvertaBold;
+}
+
+
+/* Body */
+body {
+  background-image: url(../images/background-photo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#BB662D;
+}
+
+
+/* texto */
+.mail-info {
+  text-align: center;
+  margin-top: 120px;
+  color: #fff1f0;
+}
+
+.mail-info a {
+  color: #100A34;
+  text-decoration: none;
+  color: #fff1f0;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 320px) {
+
+   .mail-info {
+    margin-top: 66vh;
+  }
+  body {
+    background-image: url(../images/background-photo-mobile-devices.png);
+
+  }
+}
+
+@media only screen and (min-width: 331px) and (max-width: 480px) {
+.mail-info {
+    margin-top: 62vh;
+  }
+    body {
+    background-image: url(../images/background-photo-mobile-devices.png);
+
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  .mail-info {
+    margin-top: 62vh;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+
+   .mail-info {
+    margin-top: 66vh;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+  .mail-info {
+    margin-top: 66vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  .mail-info {
+    margin-top: 66vh;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1366px) {
+
+  .mail-info {
+    margin-top: 66vh;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1680px) {
+
+  .mail-info {
+    margin-top: 66vh;
+  }
+}
+@media only screen and (min-width: 1681px) and (max-width: 1920px) {
+
+ .mail-info {
+    margin-top: 66vh;
+  }
+}

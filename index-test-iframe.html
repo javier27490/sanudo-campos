@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sañudo Campos</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <script>
+      // var extensionOrigin = 'chrome-extension://' + chrome.runtime.id;
+      // if (!location.ancestorOrigins.contains(extensionOrigin)) {
+        var iframe = document.createElement('iframe');
+        // Must be declared at web_accessible_resources in manifest.json
+        iframe.src = chrome.runtime.getURL('frame.html');
+
+        // Some styles for a fancy sidebar
+        iframe.style.cssText = 'position:fixed;top:0;left:0;display:block;' +
+                               'width:300px;height:100%;z-index:1000;';
+        document.body.appendChild(iframe);
+      // }
+    </script>
+  </head>
+
+  <body>
+    <div id='header-servicios-wrapper'>
+      <header>
+        <div class=header>
+          <img src="assets/logo_header.svg"  id="header-icon">
+          <h1>Somos un equipo de profesionales especializado en el sector inmobiliario rural.</h1>
+        </div>
+      </header>
+
+      <section>
+        <div class="servicios">
+          <div class="caja" id="first">
+            <article>
+
+              <h2>Compra/Venta</h2>
+                <p>   · &nbsp; &nbsp;   Trato directo y personalizado.</p>
+                <p>   ·&nbsp; &nbsp;    Elaboración de informes técnicos.</p>
+                <p>   · &nbsp; &nbsp;   Política de segmentacón publicitaria en diferentes portales.</p>
+                <p>   ·  &nbsp; &nbsp;  Asesoramiento permantente.</p>
+
+                <a href="https://www.agrofy.com.ar/sanudo-campos" class='primary-link'>Ver nuestros Campos</a>
+            </article>
+              <div class="line">
+              </div>
+          </div>
+
+          <div class="caja" id="second">
+            <article>
+              <h2>Tasaciones</h2>
+                <p>   ·&nbsp; &nbsp;  Pericia en la elaboración de trabajos técnicos profesionales.</p>
+                <p>   ·&nbsp; &nbsp;  Gestión de informes según necesidades de cada usuario externo: bancos, condóminos, herederos, etc.</p>
+                <a href="https://www.agrofy.com.ar/sanudo-campos" class='primary-link'>Ver nuestros Campos</a>
+            </article>
+          <div class="line">
+          </div>
+        </div>
+    </section>
+  </div>
+
+  <div id='contacto-footer-wrapper'>
+    <p> test</p>
+    <section>
+      <div class="contacto">
+        <!-- <iframe name="Framename" src="https://www.agrofy.com.ar/sanudo-campos" width="550" height="550" frameborder="0" scrolling="yes" style="width: 100%;"> </iframe> -->
+      </div>
+    </section>
+  </div>
+
+  <div id='contacto-footer-wrapper'>
+
+    <section>
+      <div class="contacto">
+        <div class="contact-text">
+          <img src="assets/contact_form_logo.svg" id="contact-logo">
+          <p id="align-left"> Si busca comprar, vender o tasar un campo,
+            Sañudo Campos le ofrece un asesoramiento directo y profesional.
+            Si tiene alguna consulta no dude en contactarnos.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form method="post" action="contacto.php" id="contact">
+            <br>
+              <input type="text" name="nombre" value="" class="input" id="form-1" placeholder="Nombre">
+              <br><br><br>
+              <input type="text" name="email" value="" class="input" id="form-1" placeholder="Mail">
+              <br><br><br>
+              <textarea type="text" name="mensaje" value="" class="input" id="message" placeholder="Mensaje" rows="7" cols="50">Hola,
+me gustaría comunicarme con ustedes, mi teléfono es: </textarea>
+              <br><br><br>
+              <input type="text" name="apellido" value="" class="input" id="form-2" placeholder="Apellido">
+              <br><br><br>
+              <input type="text" name="telefono" value="" class="input" id="form-2" placeholder="Teléfono">
+              <br><br>
+              <div id='mobile-message'></div>
+              <input type="submit" value="Enviar" class="submit" id="contact-submit" data-submit="...Enviar">
+          </form>
+        </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <img src="assets/logo_footer.svg" id="img-footer" width="215px">
+          <div class="info-footer">
+            <p>-Miembro Cámara Argentina de Inmobiliarias Rurales 295<br>
+              -Miembro Colegio de Corredores Inmobiliarios Santa Fe 559</p>
+            </div>
+            <div class="info-footer" id='tel-email'>
+            <p>0342 155778888<br>
+            info@sañudocampos.com</p>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+    <!-- Getbutton.io widget -->
+    <script type="text/javascript">
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        (function () {
+            var options = {
+                whatsapp: "+5493425778888", // WhatsApp number
+                call_to_action: "Escribinos", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      }
+    </script>
+    <!-- /Getbutton.io widget -->
+  </body>
+</html>
